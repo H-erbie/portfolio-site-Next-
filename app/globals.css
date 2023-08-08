@@ -3,8 +3,22 @@
 @tailwind utilities;
 
 @layer base {
+  html{
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      background-color: rgb(5, 18, 43);
+      color: white;
+      scrollbar-width: none !important;
+
+  }
   section{
     @apply min-h-screen
+  }
+  .nav{
+    @apply p-4 z-20 fixed w-screen left-0 flex items-center
+  }
+  .blur-top{
+    background-color: rgba(0,0,0,0.6);
+    @apply backdrop-blur-md 
   }
 }
 
