@@ -5,19 +5,22 @@
 @layer base {
   html{
       font-family:Verdana, Geneva, Tahoma, sans-serif;
-      background-color: rgb(5, 18, 43);
-      color: white;
       scrollbar-width: none !important;
+      @apply scroll-smooth  
+      /* -webkit-scrollbar-width: none; */
+  }
+  .txt{
+          font-family:Verdana, Geneva, Tahoma, sans-serif;
 
   }
   section{
-    @apply min-h-screen
+    @apply min-h-screen pt-16
   }
   .nav{
-    @apply p-4 z-20 fixed w-screen left-0 flex items-center
+    @apply z-20 fixed w-screen left-0 flex items-center
   }
   .blur-top{
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.4);
     @apply backdrop-blur-md 
   }
 }
