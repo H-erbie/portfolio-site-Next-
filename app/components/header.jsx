@@ -12,9 +12,9 @@ const Header = () => {
         <p className="text-xl text-lime-300">and I'm a</p>
         <h2 className="md:text-3xl sm:text-2xl text-xl  lg:text-4xl font-bold txt">Frontend Developer</h2>
       </div>
-      <Suspense fallback={<div>loading</div>}>
+      <Suspense fallback={<div>loading...</div>}>
       <div className="home-right">
-        <div className="overflow-hidden border-white w-[260px] md:w-[300px] h-[260px] md:h-[300px] lg:w-[350px] lg:h-[350px] rounded-full ">
+        <div className="overflow-hidden hover:animate-pulse border-white w-[260px] md:w-[300px] h-[260px] md:h-[300px] lg:w-[350px] lg:h-[350px] rounded-full ">
           <Image  src={profileImg} alt="Herbert Ansong Koranteng" width={370} height={370}/>
         </div>
       </div>

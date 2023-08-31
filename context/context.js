@@ -13,6 +13,7 @@ const AppProvider = ({ children }) => {
           currentSection = section.id;
           setActiveLink(currentSection)
         }
+        //console.log('unleash the odlder 3')
       });
       
     })

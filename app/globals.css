@@ -9,12 +9,17 @@
       @apply scroll-smooth  
       /* -webkit-scrollbar-width: none; */
   }
-  .txt{
+  .txt{ 
           font-family:Verdana, Geneva, Tahoma, sans-serif;
-
   }
   section{
-    @apply min-h-screen pt-16
+    @apply min-h-screen flex gap-4 flex-col justify-center items-center
+  }
+  .hob{
+    place-items: center;  
+  }
+  .hob > li{
+    @apply w-max 
   }
   .nav{
     @apply z-20 fixed w-screen left-0 flex items-center
