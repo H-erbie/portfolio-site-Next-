@@ -100,22 +100,18 @@ const Skills = () => {
   return (
     <section id="skills">
       <h2 className="text-center font-bold  text-xl lg:text-2xl">Skills</h2>
-      <div className="grid grid-cols-2 lg:grid-cols-3 mx-auto w-3/4 gap-[5%] items-center justify-center">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 mx-auto w-3/4 sm:gap-[5%]  items-center justify-center">
         {langs.map((item) => {
-          const { id, image, level, name } = item;
+          const { id, image, } = item;
           return (
-            <article key={id} className="items-center rounded-md py-3 justify-center flex flex-col sm:flex-row items-center fap-2 sm:gap-5 hover:bg-gray-100 hover:text-black">
-              <div className="flex flex-col gap-y-3">
+            <article key={id} className="items-center rounded-md py-3 justify-center flex flex-col sm:flex-row items-center fap-2 sm:gap-5 w-[132px]  h-[90px] sm:w-[152px]  sm:h-[100px] md:w-[172px]  md:h-[110px] lg:w-[192px] lg:h-[120px] hover:bg-gray-200 ">
               <Image
                 width={60}
                 height={60}
                 src={image}
                 alt="programming language"
+                className="sm:w-20 lg:w-24"
               />
-              <span className="hidden sm:block text-center">{name}</span>
-              </div>
-              <span className="level">{level}</span>
-              
             </article>
           );
         })}

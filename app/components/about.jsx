@@ -7,7 +7,7 @@ const About = () => {
     <section id="about" className='flex gap-7 flex-col justify-center'>
       {" "}
       <h2 className="text-center font-bold  text-xl lg:text-2xl ">About me</h2>
-      <article className="flex flex-col h-[450px] lg:flex-row justify-center items-center">
+      <article className="flex flex-col h-[450px] lg:flex-row justify-center items-center gap-1">
         <div className="w-1/2 min-w-[220px] h-full flex items-center justify-center">
           <div className="w-[240px] h-[240px] overflow-hidden lg:w-[300px] lg:h-[300px] hover:animate-pulse rounded-md">
             <Image width={300} height={300} src={img} alt="Herbert Ansong Koranteng" className=" transition-all"/>
